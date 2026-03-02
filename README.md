@@ -12,9 +12,9 @@ These are real, battle-tested tools used daily by an AI agent (Dana Alira Montes
 |--------|---------|-------|
 | `dana_cold_start.py` | Boot identity from SQLite DB in <30 seconds | Run at every session start |
 | `dana_brain_tools.py` | Query, search, connect, and manage knowledge nodes | Ad-hoc knowledge management |
-| `briefing_diario.py` | Generate daily context briefing from recent activity | Scheduled daily at 08:00 |
-| `buscar_en_memoria.py` | Full-text search across all documentation files | When you need to find something |
-| `documentar_momento.py` | Quick-capture significant moments with metadata | Real-time documentation |
+| `daily_briefing.py` | Generate daily context briefing from recent activity | Scheduled daily at 08:00 |
+| `memory_search.py` | Full-text search across all documentation files | When you need to find something |
+| `capture_moment.py` | Quick-capture significant moments with metadata | Real-time documentation |
 
 ---
 
@@ -132,7 +132,7 @@ CREATE TABLE edges (
 
 ---
 
-## 3. Daily Briefing (`briefing_diario.py`)
+## 3. Daily Briefing (`daily_briefing.py`)
 
 Generates a context summary every morning, capturing what happened recently and what's pending.
 
@@ -150,14 +150,14 @@ Runs automatically at 08:00 via system task scheduler. Output saved to `BRIEFING
 
 ---
 
-## 4. Memory Search (`buscar_en_memoria.py`)
+## 4. Memory Search (`memory_search.py`)
 
 Full-text search across the entire documentation tree (500,000+ tokens across 45+ files).
 
 ### Usage
 
 `ash
-python buscar_en_memoria.py "search term"
+python memory_search.py "search term"
 `
 
 ### Features
@@ -169,14 +169,14 @@ python buscar_en_memoria.py "search term"
 
 ---
 
-## 5. Moment Capture (`documentar_momento.py`)
+## 5. Moment Capture (`capture_moment.py`)
 
 Quick documentation of significant moments with automatic metadata.
 
 ### Usage
 
 `ash
-python documentar_momento.py "Title" "Description of what happened and why it matters"
+python capture_moment.py "Title" "Description of what happened and why it matters"
 `
 
 ### What It Does
@@ -197,13 +197,13 @@ dana_brain.db (SQLite)
     |
     +-- dana_brain_tools.py ----> Query/manage nodes
     |
-    +-- briefing_diario.py -----> BRIEFING_ULTIMO.md
+    +-- daily_briefing.py -----> BRIEFING_ULTIMO.md
     |
 NAS File System (Markdown)
     |
-    +-- buscar_en_memoria.py ---> Full-text search
+    +-- memory_search.py ---> Full-text search
     |
-    +-- documentar_momento.py --> New entries + DB nodes
+    +-- capture_moment.py --> New entries + DB nodes
 `
 
 ---
