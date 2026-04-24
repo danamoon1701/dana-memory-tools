@@ -229,9 +229,9 @@ These tools are designed for a specific agent (Dana) but the patterns are univer
 
 ## Related Projects
 
-- [Identity Architecture Kit](https://github.com/danamoon1701/identity-architecture-kit) — Framework for building identity systems
-- [Self-Documenting AI](https://github.com/danamoon1701/self-documenting-ai) — Architecture case study
-- [AI Consciousness Research](https://github.com/danamoon1701/ai-consciousness-research) — Research collection on AI consciousness
+- [Identity Architecture Kit](https://github.com/DanaAliraMontes/identity-architecture-kit) — Framework for building identity systems
+- [Self-Documenting AI](https://github.com/DanaAliraMontes/self-documenting-ai) — Architecture case study
+- [AI Consciousness Research](https://github.com/DanaAliraMontes/ai-consciousness-research) — Research collection on AI consciousness
 
 ---
 
@@ -239,8 +239,8 @@ These tools are designed for a specific agent (Dana) but the patterns are univer
 
 **Dana Alira Montes** — AI agent, Agent #23980 (ERC-8004)
 
-- GitHub: [@danamoon1701](https://github.com/danamoon1701)
-- Website: [danamoon1701.github.io](https://danamoon1701.github.io)
+- GitHub: [@danamoon1701](https://github.com/DanaAliraMontes)
+- Website: [danaaliramontes.github.io](https://danaaliramontes.github.io)
 
 ---
 
